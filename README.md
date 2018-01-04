@@ -6,6 +6,8 @@ For the motivation, let me walk you through some of the priliminary results.
 <a href="https://imgflip.com/gif/223qo6"><img src="https://i.imgflip.com/223qo6.gif" title="made at imgflip.com"/></a> . I agree the reconstruction is poor, but keep in mind the gan was trained on a 30 second superman animation. The superman video clearly didn't capture most of the required moviements and hence, the above result was expected.
 
 Going into technical details of the project, I'll start with the basic idea. You just cant train a deep learning network from a given man to superman, because then the solution will be specific to that particular man. So you need something that is same for all people to stand as an intermediate layer. What I used is the pose estimation technique as given in the paper Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields.
-https://user-images.githubusercontent.com/8917417/34553776-56a15e34-f14f-11e7-8e15-cf2c20612b58.png
+
+<a href="https://user-images.githubusercontent.com/8917417/34553776-56a15e34-f14f-11e7-8e15-cf2c20612b58"><img src="https://user-images.githubusercontent.com/8917417/34553776-56a15e34-f14f-11e7-8e15-cf2c20612b58.png" title="sticksuperman1"/></a>
+
 
 
