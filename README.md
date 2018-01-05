@@ -15,7 +15,10 @@ I hence trained a conditional gan to map pose images to superman. Once the gan i
 <a href="https://user-images.githubusercontent.com/8917417/34553779-57181b64-f14f-11e7-89f4-56510dcf783c"><img src="https://user-images.githubusercontent.com/8917417/34553779-57181b64-f14f-11e7-89f4-56510dcf783c.png" title="stickman1"/></a>
 and give it to the generator. Make a video from the generated frames and you are done. Sounds very easy right, yeah it is.
 
-
+#Train
+*Download the dataset and preprocess: 
+In our case download a video of your wish. Make sure the video has the same backgroud throughout and full body of the same person. Once this is done preprocess the video to convert it into frames. These frames are the ground truth data. These frames should now be converted to its corresponding poses. Now the frames and corresponding poses should be stitched together. 
+<a href="https://user-images.githubusercontent.com/8917417/34605263-f4d48d4c-f230-11e7-9d8f-4cca4c75d5e0"><img src="https://user-images.githubusercontent.com/8917417/34605263-f4d48d4c-f230-11e7-9d8f-4cca4c75d5e0.png" title="stickspider1"/></a>
 
 
 
