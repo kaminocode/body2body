@@ -9,16 +9,16 @@ I agree the reconstruction is poor, but keep in mind the gan was trained on a 30
 
 Going into details of the project, I'll start with the basic idea. You just cant train a deep learning network from a given man to superman, because then the solution will be specific to that particular man. So you need something that is same for all people to stand as an intermediate layer. What I used is the pose estimation technique as given in the paper Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields. 
 
-<a href="https://user-images.githubusercontent.com/8917417/34553776-56a15e34-f14f-11e7-8e15-cf2c20612b58"><img src="https://user-images.githubusercontent.com/8917417/34553776-56a15e34-f14f-11e7-8e15-cf2c20612b58.png" title="sticksuperman1"/></a>
+<a href="https://user-images.githubusercontent.com/8917417/34553776-56a15e34-f14f-11e7-8e15-cf2c20612b58"><img src="https://user-images.githubusercontent.com/8917417/34553776-56a15e34-f14f-11e7-8e15-cf2c20612b58.png" width="400" title="sticksuperman1"/></a>
 
 I hence trained a conditional gan to map pose images to superman. Once the gan is trainied, all you need to do is take a video, convert it into frames,then the frames to poses(stick images :P) 
-<a href="https://user-images.githubusercontent.com/8917417/34553779-57181b64-f14f-11e7-89f4-56510dcf783c"><img src="https://user-images.githubusercontent.com/8917417/34553779-57181b64-f14f-11e7-89f4-56510dcf783c.png" title="stickman1"/></a>
+<a href="https://user-images.githubusercontent.com/8917417/34553779-57181b64-f14f-11e7-89f4-56510dcf783c"><img src="https://user-images.githubusercontent.com/8917417/34553779-57181b64-f14f-11e7-89f4-56510dcf783c.png" width="400" title="stickman1"/></a>
 and give it to the generator. Make a video from the generated frames and you are done. Sounds very easy right, yeah it is.
 
 ### Train 
 - Download the dataset and preprocess: 
 In our case download a video of your wish. Make sure the video has the same backgroud throughout and full body of the same person. Once this is done preprocess the video to convert it into frames. These frames are the ground truth data. These frames should now be converted to its corresponding poses. Now the frames and corresponding poses should be stitched together. 
-<a href="https://user-images.githubusercontent.com/8917417/34605263-f4d48d4c-f230-11e7-9d8f-4cca4c75d5e0"><img src="https://user-images.githubusercontent.com/8917417/34605263-f4d48d4c-f230-11e7-9d8f-4cca4c75d5e0.png" width="800" title="stickspider1"/></a>
+<a href="https://user-images.githubusercontent.com/8917417/34605263-f4d48d4c-f230-11e7-9d8f-4cca4c75d5e0"><img src="https://user-images.githubusercontent.com/8917417/34605263-f4d48d4c-f230-11e7-9d8f-4cca4c75d5e0.png" width="400" title="stickspider1"/></a>
 
 - Once this is done you are ready to train your pix2pix network to find a mapping from poses to groundtruth. 
 ```bash
