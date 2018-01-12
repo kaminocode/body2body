@@ -69,4 +69,11 @@ python web_spiderman.py
 
 ### Apply a pre-trained model 
 
-Pretrained model will be made available soon.
+- For 256x256 size trained pix2pix model for spiderman video is at https://drive.google.com/open?id=1GZaD1JDuD4OD6mDqJPIP1NfT_f_nAqdm
+Put the above folder inside the folder named checkpoints in the current directory. The folder dance_mimic, has trained pytorch model for every 5 epochs. 
+
+- For the pose estimation the model is at https://drive.google.com/file/d/1Yv7DVeLqWMJPGic3snWTwZ1Cn5TGW84t/view?usp=sharing
+Put the above file inside the folder named 'model'(not models).
+
+
+- Pretrained model for HD will be made available soon.
