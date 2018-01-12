@@ -76,4 +76,4 @@ Put the above folder inside the folder named checkpoints in the current director
 Put the above file inside the folder named 'model'(not models).
 
 
-- Pretrained model for HD will be made available soon.
+- Pretrained model for HD video will be made available soon.
